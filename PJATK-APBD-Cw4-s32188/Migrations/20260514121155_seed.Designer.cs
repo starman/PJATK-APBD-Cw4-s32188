@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PJATK_APBD_Cw4_s32188.Infrastructure;
 
@@ -11,9 +12,11 @@ using PJATK_APBD_Cw4_s32188.Infrastructure;
 namespace PJATK_APBD_Cw4_s32188.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20260514121155_seed")]
+    partial class seed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -202,7 +205,7 @@ namespace PJATK_APBD_Cw4_s32188.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2026, 5, 14, 9, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2026, 5, 14, 14, 11, 55, 64, DateTimeKind.Local).AddTicks(3777),
                             Name = "Office Computer",
                             Stock = 12,
                             Warranty = 24,
@@ -211,7 +214,7 @@ namespace PJATK_APBD_Cw4_s32188.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2026, 5, 14, 15, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2026, 5, 14, 14, 11, 55, 66, DateTimeKind.Local).AddTicks(9785),
                             Name = "Games Machine",
                             Stock = 3,
                             Warranty = 36,
@@ -220,7 +223,7 @@ namespace PJATK_APBD_Cw4_s32188.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2026, 5, 14, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2026, 5, 14, 14, 11, 55, 66, DateTimeKind.Local).AddTicks(9807),
                             Name = "Universal Computer",
                             Stock = 6,
                             Warranty = 48,
